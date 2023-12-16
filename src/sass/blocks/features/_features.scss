@@ -1,0 +1,47 @@
+.features{
+    padding: 79px 0 81px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__item{
+        &-img{
+            img{
+                margin: 0 auto;
+            }
+        }
+        position: relative;
+        width: 360px;
+        height: 255px;
+        border: 1px solid #ececec;
+        &-text{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            color: $text-color;
+            span{
+                font-weight: 700;
+            }
+        }
+        &-icon{
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            opacity: 0.07;
+        }
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 37px;
+        font-size: clamp(2.25rem, 1.9773rem + 1.3636vw, 3rem);
+        line-height: 30px;
+        font-weight: 700;
+        color: $text-color;
+    }
+    &__arrow{
+        img{
+            display: block;
+            margin: 50px auto 33px auto;
+        }
+    }
+}

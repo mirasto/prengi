@@ -1,0 +1,53 @@
+.promo{
+    
+    background: url('../img/promo/promo__bg.jpg') center center/cover no-repeat;
+    padding-top: 39px;
+    nav{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                font-size: 13px;
+            line-height: 26px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
+            }
+        }
+    }
+    &__wrapper{
+        margin-top: 27px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    &__title{
+        margin-top: calc( 133px - 47px );
+        font-size: clamp(1.4375rem, 0.9602rem + 2.3864vw, 2.75rem);
+        font-weight: 900;
+        color: #ffffff;
+    }
+    &__subtitle{
+        margin-top: 27px;
+        font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+        font-weight: 400;
+        color: #ffffff;
+        span{
+            font-weight: 300;
+        }
+    }
+    &__img{
+        justify-self: end;
+        position: relative;
+        top: 11px;
+    }
+    &__button{
+        margin-top: 39px;
+    }
+}

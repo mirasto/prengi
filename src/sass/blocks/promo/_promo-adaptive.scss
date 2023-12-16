@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+    
+
+}
+@media (max-width: 992px) {
+    
+    .promo{
+        nav{
+            grid-template-columns: 230px 1fr;
+        }
+    }
+    
+}
+
+@media (max-width: 769px) {
+    .promo{
+        padding-bottom: 35px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__img{
+            display: none;
+        }
+        &__text{
+            text-align: center;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+   
+}

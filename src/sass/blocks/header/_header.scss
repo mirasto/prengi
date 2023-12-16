@@ -1,0 +1,31 @@
+.header{
+    min-height: 85px;
+    padding: 20px 0 16px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(227px,1fr));
+        row-gap: 25px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 28px auto;
+        img{
+            margin-right: 9px;
+        }
+    }
+    &__text{
+        margin-left: 9px;
+        &-title{
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #242424;
+        }
+        a{
+            font-size: 12px;
+            font-weight: 300;
+            color: #242424;
+            
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.expert{
+    padding: 79px 0 61px 0;
+    background: url(../img/expert/expert__bg.png) center center/cover no-repeat;
+    &__title{
+        font-size: clamp(1.0625rem, 0.7898rem + 1.3636vw, 1.8125rem);
+        line-height: 35px;
+        font-weight: 900;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__wrapper{
+        width: 843px;
+        height: 64px;
+        border: 1px solid #ffffff;
+        margin: 25px auto 36px auto;
+        padding: 18px 32px;
+        border-radius: 5px;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            
+            li{
+                padding-right: 20px;
+                display: block;
+                border-right: 1px solid white;
+                &:last-child{
+                    border-right: none;
+                }    
+                a{
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    
+                    
+                
+                    &:hover{
+                        text-decoration: none;
+                        color: #00c2f0;
+                    }
+                }
+            }
+        }
+    }
+    &__img{
+        img{
+            margin: 0 auto;
+
+        }
+    }
+}

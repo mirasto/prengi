@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+   .industry{
+    &__text{
+        font-size: clamp(0.6875rem, 0.483rem + 1.0227vw, 1.25rem);
+    }
+   }
+
+}
+@media (max-width: 992px) {
+    
+    
+}
+
+@media (max-width: 769px) {
+    .industry{
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+        }
+       }
+    
+}
+
+@media (max-width: 576px) {
+ 
+}
