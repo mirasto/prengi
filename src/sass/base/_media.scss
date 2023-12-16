@@ -9,12 +9,54 @@
         max-width: 960px;
     }
 
+    .features{
+        &__wrapper{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 30px;
+        }
+    }
+    .footer{
+        &__wrapper{
+            grid-template-columns: repeat(4, auto);
+            column-gap: 30px;
+        }
+    }
+    .industry{
+        &__text{
+            font-size: clamp(0.6875rem, 0.483rem + 1.0227vw, 1.25rem);
+        }
+       }
+
+
 }
 @media (max-width: 992px) {
     .container{
         max-width: 720px;
     }
-
+    .expert{
+        &__wrapper{
+            width: 80%;
+            height: 100%;
+            text-align: center;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                padding: 15px 0;
+                padding-right: 0;
+                border: none;
+                a{
+                    font-size: 21px;
+                }
+            }
+        }
+        
+    }
+    .promo{
+        nav{
+            grid-template-columns: 230px 1fr;
+        }
+    }
     
 }
 
@@ -22,7 +64,66 @@
     .container{
         max-width: 540px;
     }
-    
+    .data{
+        &__text{
+            text-align: center;
+            margin-top: 60px;
+            &-left, &-right{
+                text-align: center;
+            }
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            row-gap:40px;
+            &-subtitle{
+                margin-top: 15px;
+            }
+        }
+    }
+    .promo{
+        padding-bottom: 35px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__img{
+            display: none;
+        }
+        &__text{
+            text-align: center;
+        }
+    }
+    .features{
+        &__wrapper{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        }
+    }
+    .footer{
+        &__wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+            text-align: center;
+            ul{
+                li{
+                    padding: 10px 0;
+                }
+            }
+        }
+        &__company{
+            &-logo{
+                img{
+                    margin: 25px auto;
+                    display: block;
+                }
+            }
+        }
+    }
+    .industry{
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+        }
+       }
+
 }
 
 @media (max-width: 576px) {
@@ -30,4 +131,9 @@
         width: 100%;
         padding: 0 10px;
     }
+    .features{
+        &__item{
+            width: 95%;
+        }
+       }
 }
